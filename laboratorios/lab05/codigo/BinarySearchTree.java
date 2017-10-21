@@ -22,17 +22,7 @@ public class BinarySearchTree {
             root = new Node(n);
         }
     } 
-    private Node insertar(Node nodo, String n, Boolean hombre){
-        if(nodo==null){
-            return new Node(n);
-        }
-        else if(hombre){
-            nodo.right= insertar(nodo.right, n, hombre);
-            return nodo; 
-        } 
-        nodo.left = insertar(nodo.left,n, hombre);
-        return nodo;
-    }
+
         
     private Node buscar(Node n, String a)
     {
