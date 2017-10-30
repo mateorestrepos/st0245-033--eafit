@@ -217,19 +217,19 @@ public class AVL_Tree
     private int makeInt(String s)
     {
         s = s.toUpperCase();
-        if (s.contains("K") && s.substring(0, s.indexOf("K")).equals(".*\\d.*") && s.indexOf("K") == s.length() - 1)
+        if (s.contains("K"))
         {
             s = s.substring(0, s.indexOf("K"));
             float a = Float.parseFloat(s);
             return (int) (a * 1024);
         }
-        else if (s.contains("M") && s.substring(0, s.indexOf("M")).equals(".*\\d.*") && s.indexOf("M") == s.length() - 1)
+        else if (s.contains("M"))
         {
             s = s.substring(0, s.indexOf("M"));
             float a = Float.parseFloat(s);
             return (int) (a * Math.pow(1024, 2));
         }
-        else if (s.contains("G") && s.substring(0, s.indexOf("G")).equals(".*\\d.*") && s.indexOf("G") == s.length() - 1)
+        else if (s.contains("G"))
         {
             s = s.substring(0, s.indexOf("G"));
             float a = Float.parseFloat(s);
